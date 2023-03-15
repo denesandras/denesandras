@@ -1,22 +1,43 @@
+<!DOCTYPE html>
 <html>
-
-  <head>
-    <title>Dénes András</title>
-  </head>
-   
-  <body>
-    <h1>Dénes András</h1>
-    <ul>
-      <li>
-        <a href= "https://www.youtube.com/@denes.andras/">
-        YouTube
-        </a>
-      </li>
-      <li>
-        
-      </li>
-    </ul>
-    
-  </body>
-
+<head>
+	<title>My Linktree</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+			padding: 20px;
+		}
+		.linktree {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 10px;
+		}
+		.linktree a {
+			display: block;
+			background-color: #F2F2F2;
+			padding: 10px;
+			border-radius: 10px;
+			color: #333;
+			text-decoration: none;
+			font-weight: bold;
+			width: 150px;
+			transition: background-color 0.2s ease-in-out;
+		}
+		.linktree a:hover {
+			background-color: #333;
+			color: #F2F2F2;
+		}
+	</style>
+</head>
+<body>
+	<h1>My Linktree</h1>
+	<div class="linktree">
+		<a href="https://example.com">Example</a>
+		<a href="https://github.com">GitHub</a>
+		<a href="https://twitter.com">Twitter</a>
+		<a href="https://linkedin.com">LinkedIn</a>
+	</div>
+</body>
 </html>
