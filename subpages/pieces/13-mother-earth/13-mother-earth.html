@@ -17,17 +17,22 @@
 			background-size: cover;
 			color: #0A2A4E;
 		}
-		header {
+		
+		header
+		{
 			background-color: rgba(0, 0, 0, 0.5);
 			color: white;
 			padding: 20px;
 			text-align: center;
 			position: relative;
 		}
-		h1 {
+		
+		h1
+		{
 			font-size: 36px;
 			margin: 0;
 		}
+		
 		a.home-button {
 			color: white;
 			position: absolute;
@@ -35,10 +40,14 @@
 			right: 20px;
 			text-decoration: none;
 		}
-		a.home-button:hover {
+		
+		a.home-button:hover
+		{
 			text-decoration: underline;
 		}
-		section {
+		
+		section
+		{
 			background-color: rgba(255, 255, 255, 0.8);
 			padding: 20px;
 			margin: 0 auto;
@@ -48,7 +57,9 @@
 			border-top: 2px solid #010d59;
 			text-align: center;
 		}
-		button {
+		
+		button
+		{
 			background-color: white;
 			border: none;
 			color: #0A2A4E;
@@ -61,28 +72,67 @@
 			width: 100%;
 			max-width: 200px;
 		}
-		button:hover {
+		
+		button:hover
+		{
 			background-color: #0077FF;
 			color: white;
 		}
-		.blue-bracket {
+		
+		.blue-bracket
+		{
 			color: blue;
 		}
-    table {
+		
+		.audio-player
+		{
+		display: flex;
+		align-items: center;
+		width: 480px;
+		background-color: #f1f1f1;
+		padding: 10px;
+		border-radius: 4px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+
+		.audio-player audio
+		{
+		width: 100%;
+		outline: none;
+		}
+
+    .audio-player button {
+		background-color: #4CAF50;
+		border: none;
+		color: white;
+		padding: 8px 12px;
+		text-align: center;
+		text-decoration: none;
+		display: flex;
+		font-size: 14px;
+		border-radius: 4px;
+		cursor: pointer;
+		}
+    table
+	{
       border-collapse: collapse;
       margin: 20px auto;
       max-width: 500px;
       width: 100%;
     }
+	
     td, th {
       border: 2px solid #010d59;
       padding: 10px;
       text-align: center;
     }
-    th {
+	
+    th
+	{
       background-color: #010d59;
       color: white;
     }
+	
 	.all-rights-reserved {
         text-align: center;
         background-color: white;
@@ -111,6 +161,19 @@
 	</section>
 
 <p style="height: 1px;"></p> <!-- Adds 20 pixels of height with no content -->
+
+	<section>
+	<div class="audio-player">
+		<audio controls>
+		<source src="demo.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+		</audio>
+		<button>👈 Play demo</button>
+	</div>
+	</section>
+
+<p style="height: 1px;"></p> <!-- Adds 20 pixels of height with no content -->
+
 	<section>
 	<h3>The Story</h3>
     <p>This piece was made thanks to<br>
@@ -124,8 +187,9 @@
 	feel free to take big breaths<br>
 	when listening.</p>
 	</section>
+
 <p style="height: 1px;"></p> <!-- Adds 20 pixels of height with no content -->
-<p style="height: 1px;"></p> <!-- Adds 20 pixels of height with no content -->
+
 	<section>
 	<h2>Get a link when released!</h2>
   <form target="_blank" action="https://formsubmit.co/denandras+13hirlevel@gmail.com" method="POST">
