@@ -89,6 +89,35 @@
         color: black;
         padding: 10px;
     }
+	.audio-player
+		{
+		display: flex;
+		align-items: center;
+		width: flex;
+		background-color: #f1f1f1;
+		padding: 10px;
+		border-radius: 4px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+
+		.audio-player audio
+		{
+		width: 100%;
+		outline: none;
+		}
+
+    .audio-player button {
+		background-color: #035B41;
+		border: none;
+		color: white;
+		padding: 8px 12px;
+		text-align: center;
+		text-decoration: none;
+		display: flex;
+		font-size: 14px;
+		border-radius: 4px;
+		cursor: pointer;
+		}
 	</style>
 </head>
 <body>
@@ -102,14 +131,30 @@
 	<section>
 		<p>Listen to "Video Game" by András Dénes on:</p>
 		<hr>
-		<button onclick="window.open('https://open.spotify.com/track/1pReXeYOygXi8Sf4HXF5I1?si=d02ce3cfbbff4cd0')">Spotify</button>
-		<button onclick="window.open('https://music.apple.com/us/album/video-game/1681414162?i=1681414163')">Apple Music</button>
-		<button onclick="window.open('https://deezer.page.link/U7GurZ2v13SS68TV9')">Deezer</button>
-		<button onclick="window.open('https://music.youtube.com/watch?v=NDKpci4qPj8&feature=share')">Youtube Music</button>
-		<button onclick="window.open('https://music.amazon.com/albums/B0C1RJVY16?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=HU&ref=dm_sh_icgPdqQFwdaRF6j0MzqyTcjC4&trackAsin=B0C1RG2RRM')">Amazon Music</button>
-		<button onclick="window.open('https://tidal.com/browse/track/287726013')">Tidal</button>
+		<button onclick="window.open('https://open.spotify.com/track/1pReXeYOygXi8Sf4HXF5I1?si=d02ce3cfbbff4cd0')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png" alt="Spotify" style="width: 20px; height: 20px;"> Spotify</button>
+		<button onclick="window.open('https://music.apple.com/us/album/video-game/1681414162?i=1681414163')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Apple_Music_icon.svg/2048px-Apple_Music_icon.svg.png" alt="Apple Music" style="width: 20px; height: 20px;"> Apple Music</button>
+		<button onclick="window.open('https://deezer.page.link/U7GurZ2v13SS68TV9')"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968860.png" alt="Deezer" style="width: 20px; height: 20px;"> Deezer</button>
+		<button onclick="window.open('https://music.youtube.com/watch?v=NDKpci4qPj8&feature=share')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Youtube_Music_icon.svg/2048px-Youtube_Music_icon.svg.png" alt="Youtube Music" style="width: 20px; height: 20px;"> Youtube Music</button>
+		<button onclick="window.open('https://music.amazon.com/albums/B0C1RJVY16?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=HU&ref=dm_sh_icgPdqQFwdaRF6j0MzqyTcjC4&trackAsin=B0C1RG2RRM')"><img src="https://assets.stickpng.com/images/62b1e81756b6848f8bec9037.png" alt="Amazon Music" style="width: 20px; height: 20px;"> Amazon Music</button>
+		<button onclick="window.open('https://tidal.com/browse/track/287726013')"><img src="https://icon-library.com/images/tidal-icon-png/tidal-icon-png-23.jpg" alt="Tidal" style="width: 20px; height: 20px;"> Tidal</button>
 	</section>
+
 <p style="height: 1px;"></p> <!-- Adds 20 pixels of height with no content -->
+
+	<section>
+	
+	<div class="audio-player">
+		<h4>Preview</h4>
+		<audio controls>
+		<source src="demo.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+		</audio>
+		
+	</div>
+	</section>
+
+<p style="height: 1px;"></p> <!-- Adds 20 pixels of height with no content -->
+
 	<section>
 		<table style="margin: 0 auto;">
 			<tr>
