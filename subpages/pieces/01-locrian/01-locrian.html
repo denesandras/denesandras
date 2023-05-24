@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mirror - András Dénes</title>
+	<link rel="icon" type="image/ico" href="music.ico">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background: url('35-mirror-bg.jpg') no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			color: #0066cc;
+		}
+
+		header {
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			padding: 20px;
+			text-align: center;
+			position: relative;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin: 0;
+		}
+
+		a.home-button {
+			color: white;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			text-decoration: none;
+		}
+
+		a.home-button:hover {
+			text-decoration: underline;
+		}
+
+		section {
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 20px;
+			margin: 0 auto;
+			max-width: 500px;
+			border-radius: 10px;
+			text-align: center;
+			border-top: 2px solid #0066cc;
+			text-align: center;
+		}
+
+		section img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+
+		button {
+			background-color: white;
+			border: none;
+			color: #0066cc;
+			cursor: pointer;
+			font-size: 18px;
+			margin: 10px;
+			padding: 10px 20px;
+			border-radius: 5px;
+			display: inline-block;
+			width: 100%;
+			max-width: 200px;
+		}
+
+		button:hover {
+			background-color: #4da6ff;
+			color: white;
+		}
+
+		.blue-bracket {
+			color: blue;
+		}
+
+		.audio-player {
+			display: flex;
+			align-items: center;
+			width: flex;
+			background-color: #f1f1f1;
+			padding: 10px;
+			border-radius: 4px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+
+		.audio-player audio {
+			width: 100%;
+			outline: none;
+		}
+
+		.audio-player button {
+			background-color: #0066cc;
+			border: none;
+			color: white;
+			padding: 8px 12px;
+			text-align: center;
+			text-decoration: none;
+			display: flex;
+			font-size: 14px;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		table {
+			border-collapse: collapse;
+			margin: 20px auto;
+			max-width: 500px;
+			width: 100%;
+		}
+
+		td, th {
+			border: 2px solid #0066cc;
+			padding: 10px;
+			text-align: center;
+		}
+
+		th {
+			background-color: #0066cc
+					color: white;
+		}
+
+		.all-rights-reserved {
+			text-align: center;
+			background-color: white;
+			color: black;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Mirror</h1>
+		<a class="home-button" href="https://denesandras.github.io/denesandras/"><img src="home-icon-white.png" alt="Home"></a>
+		<h2>András Dénes</h2>
+		<h3>2023.</h3>
+	</header>
+
+	<section>
+		<p>Listen to "Mirror" by András Dénes on:</p>
+		<hr>
+		<button onclick="window.open('')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png" alt="Spotify" style="width: 20px; height: 20px;"> Spotify</button>
+		<button onclick="window.open('')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Apple_Music_icon.svg/2048px-Apple_Music_icon.svg.png" alt="Apple Music" style="width: 20px; height: 20px;"> Apple Music</button>
+		<button onclick="window.open('')"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968860.png" alt="Deezer" style="width: 20px; height: 20px;"> Deezer</button>
+		<button onclick="window.open('')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Youtube_Music_icon.svg/2048px-Youtube_Music_icon.svg.png" alt="Youtube Music" style="width: 20px; height: 20px;"> Youtube Music</button>
+			<button onclick="window.open('')"><img src="https://assets.stickpng.com/images/62b1e81756b6848f8bec9037.png" alt="Amazon Music" style="width: 20px; height: 20px;"> Amazon Music</button>
+			<button onclick="window.open('')"><img src="https://icon-library.com/images/tidal-icon-png/tidal-icon-png-23.jpg" alt="Tidal" style="width: 20px; height: 20px;"> Tidal</button>
+	</section>
+
+	<p style="height: 1px;"></p>
+
+	<section>
+		<div class="audio-player">
+			<h4>Preview</h4>
+			<audio controls>
+				<source src="demo.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+	</section>
+
+	<p style="height: 1px;"></p>
+
+	<section>
+		<img src="35-mirror-cover.jpg" alt="Cover">
+	</section>
+
+	<p style="height: 1px;"></p>
+
+	<section>
+		<h3>Lyrics</h3>
+		<p>I don't know you as much as I'd like to,<br>
+			I haven't got to know anyone like you.<br>
+			Why are you so kind to me?<br>
+			It feels like we were meant to be<br>
+			Together.<br><br>
+			I should be a bit less fragile,<br>
+			But somehow you see through my disguise.<br>
+			You look into my eyes and see<br>
+			Everything that I'm trying to hide<br>
+			From you.<br><br>
+			Is this real?<br>
+			Or am I caught in an illusion?<br>
+			I'm losing sense of time and space,<br>
+			Floating in your embrace.<br><br>
+			Now it's just you and me,<br>
+			And the rest of the world disappears.<br>
+			You're the mirror I look in<br>
+			When I need to find myself<br>
+			Again.<br><br>
+			In the shadows, you hold me tight.<br>
+			You're the warmth in the darkest night.<br>
+			With you, I find my peace,<br>
+			You're the calm within the storm<br>
+			That won't cease.<br><br>
+			Is this real?<br>
+			Or am I caught in an illusion?<br>
+			I'm losing sense of time and space,<br>
+			Floating in your embrace.<br><br>
+			Now it's just you and me,<br>
+			And the rest of the world disappears.<br>
+			You're the mirror I look in<br>
+			When I need to find myself<br>
+			Again.<br><br>
+			I'm lost in your eyes,<br>
+			I'm lost in your arms.<br>
+			You're the mirror<br>
+			That shows me who I am.<br><br>
+			Now it's just you and me,<br>
+			And the rest of the world disappears.<br>
+			You're the mirror I look in<br>
+			When I need to find myself<br>
+			Again.<br>
+			Again.</p>
+	</section>
+
+	<table>
+		<tr>
+			<th><a href="https://www.instagram.com/denesandras.music/"><img src="instagram-icon.png" alt="Instagram" style="width: 20px; height: 20px;"></a></th>
+			<th><a href="https://www.facebook.com/denesandras.music/"><img src="facebook-icon.png" alt="Facebook" style="width: 20px; height: 20px;"></a></th>
+			<th><a href="https://twitter.com/denesandras_/"><img src="twitter-icon.png" alt="Twitter" style="width: 20px; height: 20px;"></a></th>
+			<th><a href="https://soundcloud.com/denesandras/"><img src="soundcloud-icon.png" alt="SoundCloud" style="width: 20px; height: 20px;"></a></th>
+			<th><a href="https://denesandras.bandcamp.com/"><img src="bandcamp-icon.png" alt="Bandcamp" style="width: 20px; height: 20px;"></a></th>
+		</tr>
+	</table>
+
+	<div class="all-rights-reserved">
+		<p>© 2023 András Dénes. All rights reserved.</p>
+	</div>
+
+</body>
+</html>
