@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ricercata</title>
+    <title>Musica Ricercata</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
-            font-size: 24px;
+            text-align: center;
+            padding-top: 20px;
         }
 
-        #loading {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #333333;
+        h2 {
+            font-size: 32px;
         }
 
-        #loading-text {
-            margin-top: 10px;
+        .hidden {
+            display: none;
         }
     </style>
     <script>
-        window.addEventListener('load', function() {
-            var websiteElement = document.createElement('iframe');
-            websiteElement.style.visibility = 'hidden';
-            websiteElement.src = 'https://l.linklyhq.com/l/1q6xj';
-            document.body.appendChild(websiteElement);
+        function redirect() {
+            window.location.href = 'https://bit.ly/43opgE1';
+        }
 
-            var loadingTextElement = document.getElementById('loading-text');
-            loadingTextElement.textContent = 'Please wait...';
-
-            websiteElement.onload = function() {
+        function revealButton() {
+            var countdownElement = document.getElementById("countdown");
+            countdownElement.textContent = "5";
+            setTimeout(function() {
+                countdownElement.textContent = "4";
                 setTimeout(function() {
-                    window.location.href = 'https://bit.ly/43opgE1';
+                    countdownElement.textContent = "3";
+                    setTimeout(function() {
+                        countdownElement.textContent = "2";
+                        setTimeout(function() {
+                            countdownElement.textContent = "1";
+                            redirect();
+                        }, 1000);
+                    }, 1000);
                 }, 1000);
-            };
-        });
+            }, 1000);
+        }
     </script>
 </head>
-<body>
-    <div id="loading">
-        <div>Loading Website</div>
-        <div id="loading-text"></div>
-    </div>
+<body onload="revealButton()">
+    <h2 id="countdown">5</h2>
+    <embed src="https://l.linklyhq.com/l/1q6xj" style="width:1px; height: 1px;">
 </body>
 </html>
