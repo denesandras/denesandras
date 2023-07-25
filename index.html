@@ -1,55 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Dénes András</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			text-align: center;
-			padding: 20px;
-			font-size: 16px;
-		}
-		.linktree {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: 10px;
-			margin-top: 20px;
-		}
-		.linktree a {
-			display: block;
-			background-color: #F2F2F2;
-			padding: 10px;
-			border-radius: 10px;
-			color: #333;
-			text-decoration: none;
-			font-weight: bold;
-			width: 150px;
-			transition: background-color 0.2s ease-in-out;
-			font-size: 14px;
-		}
-		.linktree a:hover {
-			background-color: #333;
-			color: #F2F2F2;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirect</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #F0F0F0;
+    }
+
+    .button-container {
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .button-27 {
+      appearance: none;
+      background-color: #000000;
+      border: 2px solid #1A1A1A;
+      border-radius: 20px; /* Increase the border-radius for a bigger button */
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: block; /* Change display to block for proper spacing */
+      font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      font-size: 18px; /* Increase font size for a bigger button */
+      font-weight: 600;
+      line-height: normal;
+      margin: 10px auto; /* Add some vertical spacing */
+      min-height: 70px; /* Increase the min-height for a bigger button */
+      min-width: 0;
+      outline: none;
+      padding: 20px 30px; /* Increase padding for a bigger button */
+      text-align: center;
+      text-decoration: none;
+      transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: 100%;
+      will-change: transform;
+    }
+
+    .button-27:disabled {
+      pointer-events: none;
+    }
+
+    .button-27:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      transform: translateY(-2px);
+    }
+
+    .button-27:active {
+      box-shadow: none;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body>
-	<h1>Dénes András</h1>
-	<h2>Harsona</h2>
-	<h3>Liszt Ferenc Zeneművészeti Egyetem</h3>
-	<h3><a href="https://www.szegedtrombones.com">Szeged Trombone Ensemble</a></h3>
-	<hr></hr>
-	<div class="linktree">
-		<a href="https://www.youtube.com/@denes.andras" target="_blank">Youtube</a>
-		<a href="https://open.spotify.com/artist/1p6ksOjXYNPv9bML1hEd02?si=VfpSH1wqSCOVUhh3D0mk9A" target="_blank">Spotify</a>
-		<a href="https://instagram.com/andras.harsona" target="_blank">Instagram</a>
-		<a href="mailto:denesandras@harsona.hu" target="_blank">Email</a>
-		<a href="/denesandras/subpages/gallery/gallery.html" target="_blank">Gallery</a>
-		<a href="/denesandras/subpages/pieces.html" target="_blank">Pieces</a>
-		<hr></hr>
-		<a href="/denesandras/subpages/pieces/13-mother-earth/13-mother-earth" target="_blank">Latest Release: Mother Earth</a>
-	</div>
+  <div class="button-container">
+    <!-- Add href links to the buttons -->
+    <a href="https://denandras.github.io/zakjegyzet/" class="button-27" role="button">Zenetöri jegyzetek</a>
+    <a href="https://denandras.github.io/home/" class="button-27" role="button">Homepage</a> <!-- Add another button below with the same style -->
+  </div>
 </body>
 </html>
